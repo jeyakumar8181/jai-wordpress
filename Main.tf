@@ -1,12 +1,6 @@
 provider "aws" {
 	region = "ap-south-1"
 }
-terraform {
-  backend "s3" {
-    bucket = "jai-wordpress"
-    key    = "state"
-  }
-}
 module "RDS" {
         source = "./modules/RDS"
 }
