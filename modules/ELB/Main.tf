@@ -1,7 +1,7 @@
 resource "aws_elb" "wordpress-elb" {
   name               = "${var.name}"
-  subnets = ["${var.subnets}"]
-  security_groups = ["${var.security_groups}"]
+  subnets = ["${var.elb_subnet}"]
+  security_groups = ["${var.security_group}"]
 
 
 
