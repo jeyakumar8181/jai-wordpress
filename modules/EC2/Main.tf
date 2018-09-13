@@ -4,7 +4,7 @@ provider "aws" {
   region     = "${var.region}"
 }
 
-resource "aws_instance" "ebizon" {
+resource "aws_instance" "wordpress-jai" {
         ami = "${var.ami}"
         instance_type = "${var.instance_type}"
         key_name = "${var.key_name}"
