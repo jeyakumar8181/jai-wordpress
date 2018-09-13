@@ -4,9 +4,6 @@ variable "name"{
 variable "vpc_id" {
   default = "vpc-0ef67e6b"
 }
-variable "server_id" {}
-variable "elb_subnet" {}
-variable "instance_id" {}
 variable "elb_subnet" {}
 variable "instance_id" {}
 variable "cross_zone_load_balancing" {
@@ -28,7 +25,6 @@ variable "connection_draining_timeout" {
   description = "The time in seconds to allow for connections to drain"
   default     = 300
 }
-variable "instance_id" {}
 
 
 
