@@ -9,7 +9,7 @@ resource "aws_instance" "ebizon" {
         instance_type = "${var.instance_type}"
         key_name = "${var.key_name}"
         subnet_id = ["${var.ec2_subnet}"]
-        security_groups = ["${var.security_groups}"]
+        security_groups = ["${var.security_group}"]
         associate_public_ip_address = "${var.associate_public_ip_address}"
         user_data = "${file("./modules/EC2/wordpress.sh")}"
 	
