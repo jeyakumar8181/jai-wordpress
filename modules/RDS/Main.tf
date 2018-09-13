@@ -36,7 +36,7 @@ resource "aws_security_group" "rds-wordpress-sg" {
   }
 resource "aws_db_subnet_group" "rds-subnet" {
   name       = "rdssubnet"
-  subnet_ids = ["subnet-18008455", "subnet-f356b59b"]
+  subnet_ids = ["subnet-43fa8d26"]
 
   tags {
     name = "wordpress-rds"
