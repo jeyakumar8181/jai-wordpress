@@ -4,13 +4,13 @@ variable "name"{
 variable "security_groups" {
   description = "A list of security group IDs to assign to the ELB"
   type        = "list"
-  default = ["sg-74f26f1f"]
+  default = ["sg-036fc7c1850d60236"]
 }
 
 variable "subnets" {
   description = "A list of subnet IDs to attach to the ELB"
   type = "list"
-  default     = ["subnet-18008455"]
+  default     = ["subnet-43fa8d26"]
 }
 
 
