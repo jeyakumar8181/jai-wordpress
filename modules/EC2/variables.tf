@@ -6,10 +6,20 @@ variable "associate_public_ip_address"{
   default="true"
   }
 variable "ami" {}
-variable "instance_type" {}
-variable  "key_name" {} 
-variable "ec2_subnet" {}
-variable "security_group" {}
-variable "vpc_id" {
-  default = "vpc-0ef67e6b"
+variable "instance_type" {
+  description = "The type of instance to start"
+  default = "t2.micro"
 }
+variable "key_name" {
+  description = "The key name to use for the instance"
+  default     = "jaiebizon"
+}
+variable "subnet_id" {
+  description = "The VPC Subnet ID to launch in"
+  default    = "subnet-43fa8d26"
+}
+variable "security_groups" {
+  description = "A list of security group IDs to assign to the ELB"
+  type        = "list"
+  default = ["sg-036fc7c1850d60236"]
+  }
